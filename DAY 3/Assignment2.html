@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <script>
+        let str ="LetsUpgrade";
+        function chartat()
+        {
+            let x=prompt("Enter the number");
+            let val=str.charAt(x);
+            console.log("Character at index "+ x +" is "+ val);
+            return val;
+        }
+        function chartCodeat()
+        {
+            let x=prompt("Enter the number");
+            let val=str.charCodeAt(x);
+            console.log("Unicode of the char at index "+ x + " is " +val);
+            return val;
+        }
+        function Concat()
+        {
+            let str1 =prompt("Enter First string");
+            let str2 =prompt("Enter second string");
+            let val=str1.concat(str2);
+            console.log("The concatenated string is " +val);
+            return val;
+        }
+        function substring()
+        {
+            let num1 =prompt("Enter the start index");
+            let num2 =prompt("Enter the end index");
+            let val=str.substring(num1,num2);
+            console.log("The substring string is " +val);
+            return val;
+        }
+        function slice()
+        {
+            let num1 =prompt("Enter the start index");
+            let num2 =prompt("Enter the end index");
+            let val=str.slice(num1,num2);
+            console.log("The string is " +val);
+            return val;
+        }
+        function Replace()
+        {
+            let num1 =prompt("Enter the word to be replaced");
+            let num2 =prompt("Enter the replacement word");
+            let val=str.slice(num1,num2);
+            console.log("The string is " +val);
+            return val;
+        }
+        let arr = ['one', true, 32, ['1','2']];
+let arr2 = ['rio', 'berlin','alicia'];
+        function isArray(){
+            console.log(Array.isArray(arr));
+        }
+        function reverse(){
+            console.log(arr.reverse());
+        }
+        function concat(){
+            console.log(arr.concat(arr2));
+        }
+        function unshift(){
+            arr2.unshift('guduvancherry');
+            console.log(arr2);
+        }
+        function push(){
+            arr2.push('India')
+            console.log(arr2);
+        }
+        function pop(){
+            arr2.pop('pozhichalur')
+            console.log(arr2);
+        }
+    </script>
+</head>
+<body>
+    <h3>Various methods in string</h3>
+    <p> Let us consider "LetsUpgrade" as string</p>
+    <ul>
+        <li>
+            <h4>ChartAt()</h4>
+            <p>Returns the character at the “x” position within the string.</p>
+            <input type="button" onclick="chartat()" value="click here to try this method">
+        </li>
+        <li>
+            <h4>ChartCodeAt()</h4>
+            <p>Returns the Unicode value of the character at position “x” within the string.</p>
+            <input type="button" onclick="chartCodeat()" value="click here to try this method">
+        </li>
+        <li>
+            <h4>Concat()</h4>
+            <p>Combines one or more strings (arguments v1, v2 etc) into the existing one and returns the combined string. Original string is not modified.</p>
+            <input type="button" onclick="Concat()" value="click here to try this method">
+        </li>
+        <li>
+            <h4>Concat()</h4>
+            <p>Combines one or more strings (arguments v1, v2 etc) into the existing one and returns the combined string. Original string is not modified.</p>
+            <input type="button" onclick="Concat()" value="click here to try this method">
+        </li>
+        <li>
+            <h4>Substring()</h4>
+            <p> Returns the characters in a string beginning at “start” and through the specified number of characters, “length”. “Length” is optional, and if omitted, up to the end of the string is assumed.</p>
+            <input type="button" onclick="substring()" value="click here to try this method">
+        </li>
+        method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+        <li>
+            <h4>Slice()</h4>
+            <p> Extracts parts of a string and returns the extracted parts in a new string.</p>
+            <input type="button" onclick="slice()" value="click here to try this method">
+        </li>
+        <li>
+            <h4>Replace()</h4>
+            <p>  Method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.</p>
+            <input type="button" onclick="Replace()" value="click here to try this method">
+        </li>
+    </ul>
+    <div>
+        <p>Array</p>
+        <pre>
+            <input type="button" onclick="isArray()" value="isArray">
+            <input type="button" onclick="reverse()" value="reverse array elements">
+            <input type="button" onclick="concat()" value="concat arrays">
+            <input type="button" onclick="unshift()" value="unshift elements">
+            <input type="button" onclick="push()" value="push element into array">
+            <input type="button" onclick="pop()" value="pop the element">
+          
+        </pre>
+    </div>
+    
+</body>
+</html>
