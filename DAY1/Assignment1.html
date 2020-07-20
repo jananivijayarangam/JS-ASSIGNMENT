@@ -1,0 +1,63 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <script>
+        function log_method()
+        {
+            console.log("console log method implememtation");
+        }
+        function error_method()
+        {
+            console.error("Displaying error message");
+        }
+        function warn_method()
+        {
+            console.warn("Displaying a warning");
+        }
+        function clear_method()
+        {
+            console.clear("console cleared");
+        }
+        function time_method()
+        {
+            console.time('t');
+            console.timeEnd('t');
+        }
+        function table_method()
+        {
+            console.table({'a':10,'b':20,'c':30});
+        }
+    </script>
+</head>
+<body>
+    <h3>Various methods of console</h3>
+    <h4>Open your console by pressing ctrl+shift+I</h4>
+    <ul>
+        <li> <h4>Console log</h4> 
+            <p> Prints output in the console</p>
+            <input type="button" onclick="log_method()" value=" click here to see the console output"></button>
+        </li>
+        <li><h4>Console error</h4>
+            <p>It displays error on console, used for testing code.</p>
+            <input type="button" onclick="error_method()" value="click here to see the error in console"></button>
+        </li>
+        <li><h4>Console Warning</h4>
+            <p>	It displays warning , message on the console.</p>
+            <input type="button" onclick="warn_method()" value="click here to see a warning in console"></button>
+        </li>
+        <li><h4>Console table</h4>
+            <p>	displays content as table </p>
+            <input type="button" onclick="table_method()" value="click here to view a table in console"></button>
+        </li>
+        <li><h4>Console time</h4>
+            <p>	Gives the time taken to display the content </p>
+            <input type="button" onclick="time_method()" value="click here to view time"></button>
+        </li>
+        
+    </ul>
+</body>
+</html>
