@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME NUMBERS WITHIN THE RANGE</title>
+</head>
+<body>
+    <h1>
+        17th JULY QUESTION NO 7
+    </h1>
+    <script>
+        let num = Number(prompt("Enter any number"));
+        console.log("the prime numbers within the range of 2 to "+num+" are:");
+        for(i=2;i<=num;i++)
+        {
+            let flag = 0;
+            for(j=2;j<=i;j++)
+            {
+                if(j%i==0)
+                {
+                    flag = 1
+                    continue;
+                }
+            }
+            if(flag==0)
+            console.log(i);
+        }
+    </script>
+</body>
+</html>

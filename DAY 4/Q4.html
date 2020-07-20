@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>17th JULY QUESTION NO : 4</h1>
+    <script>
+        let operation = prompt("Enter the mathematical operation to be performed \n Add/Sub/Mul/Div/Sq Root/Per");
+        let var1,var2,var3;
+        if(operation == 'Sq Root')
+        {
+            var3 = prompt("Enter the num");
+        }
+        else
+        {    
+         var1 = prompt("Enter num 1");
+         var2 = prompt("Enter num 2");
+        }
+        var1 = Number(var1);
+        var2 = Number(var2);
+        var3 = Number(var3);
+        switch(true)
+        {
+            case operation == 'Add':
+            console.log(var1+var2);
+            break;
+            case operation == 'Sub':
+            console.log(var1-var2);
+            break;
+            case operation == 'Mul':
+            console.log(var1*var2);
+            break;
+            case operation == 'Div':
+            console.log(var1/var2);
+            break;
+            case operation == 'Sq Root':
+            console.log(Math.sqrt(var3));
+            break;
+            case operation == 'Per':
+            console.log(((var1/var2)*100)+"%");
+            break;
+        }
+    </script>
+</body>
+</html>
