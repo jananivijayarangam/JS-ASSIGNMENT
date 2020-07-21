@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <script>
+        class User
+        {
+            constructor(name, age,email)
+            {
+                this.name = name;
+                this.age = age;
+                this.email = email;
+                this.luCoins = 0;
+                this.course = [];
+            }
+            login()
+            {
+                console.log(`${this.name} has looged in`);
+                return this;
+            }
+            logout()
+            {
+                console.log(`${this.name} has logged out`);
+            }
+        }
+        class Moderator extends User{
+            constructor(name,age,email)
+            {
+                super(name,age,email);
+                this.luCoins = 0;
+            }
+            addCoins()
+            {
+                this.luCoins++;
+                console.log(`${this.name} has ${this.luCoins} coins`);
+                return this;
+            }
+            removeCoins()
+            {
+                this.luCoins--;
+                console.log(`${this.name} has ${this.luCoins} coins`);
+                return this;
+            }
+
+        }
+        class Admin extends Moderator
+        {
+            addCourse(User,course)
+            {
+                User.course.push(course);
+                console.log(User);
+            }
+            deleteCourse(User,course)
+            {
+                User.course.pop(course);
+                console.log(User);
+            }
+        }
+        let user1 = new User('Sai',45,'saisudha@gmail.com');
+        let user2 = new User('Vishall',80,'vishall1002@gmail.com');
+        let Mod = new Moderator('Jayanth',21,'jayanth@gmail.com');
+        let admin =  new Admin('Rajesh',99,'rockhybahi@gmail.com');
+        let users = [user1,user2,Mod,admin];
+        users.forEach(element =>{console.log(element);});
+        admin.addCourse(user1,'java');
+        admin.addCourse(user1,'Python');
+        user1.login();
+        Mod.addCoins();
+        Mod.addCoins();
+        Mod.removeCoins();
+        user1.logout();
+    </script>
+    
+</body>
+</html>

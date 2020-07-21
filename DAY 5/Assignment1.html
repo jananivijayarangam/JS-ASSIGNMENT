@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <script>
+        let var1 = parseInt(prompt("Enter any positive number"));
+        let arr = [];
+        for(let i=0;i<=var1;i++)
+        {
+            arr.push(i);
+        }
+        let odd = arr.filter(el => el%2!=0);
+        console.log("Odd number:"+odd);
+        let cube = odd.map(el => el**3);
+        console.log("Cube array:"+cube);
+    </script>
+</body>
+</html>
